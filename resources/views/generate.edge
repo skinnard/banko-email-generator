@@ -18,13 +18,22 @@
   {{ style( 'css/main.css' ) }}
 
   <meta name="theme-color" content="#fafafa">
+  <style>
+    .info {
+      background: pink;
+      padding: 20px;
+      border-radius: 3px;
+      font-weight: 700 !important;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
     <div class="py-5 text-center">
       <h2>Here is Your Fresh Signature {{ first_name }}!</h2>
-      <p class="lead">Copy and paste into your signature.</p>
+      <p class="lead">Go to Gmail > Settings and paste in your signature.</p>
+      <p class="info">You need to use Firefox for this step as Chrome adds extra&nbsp;formatting.</p>
     </div>
 
     <div class="row">
