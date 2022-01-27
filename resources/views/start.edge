@@ -11,10 +11,14 @@
   <link rel="apple-touch-icon" href="{{ assetsUrl( 'favicon.png' ) }}">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   {{ style( 'css/normalize.css' ) }}
-  {{ style( 'fonts/stylesheet.css' ) }}
   {{ style( 'css/main.css' ) }}
 
   <meta name="theme-color" content="#fafafa">
@@ -23,6 +27,7 @@
 <body>
   <div class="container">
     <div class="py-5 text-center">
+      <img src="/img/mc-logo.png" width="150" style="margin-bottom:20px;" alt="">
       <h2>Signature Details</h2>
       <p class="lead">Enter your details so we can create your signature</p>
     </div>
@@ -54,10 +59,10 @@
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="role">Role</label>
-            <input type="text" class="form-control" name="role" placeholder="eg. Chief Cat Herder" required>
-            <div class="invalid-feedback">
-              I know you have a role.
-            </div>
+              <input type="text" class="form-control" name="role" placeholder="eg. Chief Cat Herder" required>
+              <div class="invalid-feedback">
+                I know you have a role.
+              </div>
             </div>
 
             <div class="col-md-6 mb-3">
@@ -67,42 +72,42 @@
           </div>
 
           <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" placeholder="example@creativeguild.ca" required>
-            <div class="invalid-feedback">
-              Valid email is required.
+            <div class="col-md-6 mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="email" placeholder="example@cemail.ca" required>
+              <div class="invalid-feedback">
+                Valid email is required.
+              </div>
             </div>
-          </div>
 
-          <div class="col-md-6 mb-3">
-            <label for="phone">Mobile Phone # <span class="text-muted">(Optional)</span></label>
-            <input type="text" class="form-control" name="phone" placeholder="555.555.5555">
-            <div class="invalid-feedback">
-              Enter a real phone number.
+            <div class="col-md-6 mb-3">
+              <label for="phone">Mobile Phone # <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" name="phone" placeholder="555.555.5555">
+              <div class="invalid-feedback">
+                Enter a real phone number.
+              </div>
             </div>
           </div>
-        </div>
 
           <hr class="mb-4">
-          <button class="btn btn-primary btn-lg btn-block" type="submit" style="font-weight: 700 !important;">Generate</button>
+          <button class="btn btn-primary btn-lg btn-block" type="submit"
+            style="font-weight: 700 !important;">Generate</button>
         </form>
       </div>
     </div>
-
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">&copy; 2021 Email Generator 5000</p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="https://creativeguild.ca">Creative Guild ♥️</a></li>
-      </ul>
-    </footer>
   </div>
 
   {{ script( 'js/vendor/modernizr-3.8.0.min.js' ) }}
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
 
   {{ script( 'js/plugins.js' ) }}
   {{ script( 'js/main.js' ) }}

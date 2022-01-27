@@ -15,7 +15,7 @@ class SignatureController {
             credentials: credentials || 'creds here',
             role: role || 'Director of Fun',
             extension: extension,
-            email: email || 'example@creativeguild.ca',
+            email: email || 'example@email.ca',
             phone: phone || null,
             phone_clean: phone ? phone.replace(/\D/g,'') : null || null,
             mobile: mobile || null,

@@ -17,6 +17,7 @@ html {
   line-height: 1.4;
 }
 
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -269,7 +270,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'grouch_btregular', serif !important;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 700 !important;
 }
 
 p,
@@ -278,6 +280,6 @@ ul,
 label,
 input,
 button {
-  font-family: 'galano_grotesqueregular', sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
   font-weight: 500 !important;
 }
